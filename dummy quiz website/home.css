@@ -1,0 +1,85 @@
+body{
+    background-color: black;
+}
+nav{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+h1{
+    color: white;
+    font-size: 50px;
+    margin: 5px 20px 100px 10px;
+}
+img{
+    height:70px; 
+    width:70px;
+}
+div{
+    color:white;
+    height: 480px;
+    width: 400px;
+    background-color: black;
+    border:2px solid rgb(248, 244, 244);
+    text-align: center;
+    margin: auto;
+    box-shadow: 5px 5px 15px white;
+
+}
+div label{
+
+    font-size: 20px;
+}
+label input{
+    font-size: 15px;
+    color:black;
+}
+label input:hover{
+    border:2px solid rgb(11, 247, 3);
+}
+a{
+   text-decoration: none;
+   border: 3px solid red;
+   padding: 15px 20px;
+   font-size: 20px;
+   border-radius: 10px;
+   box-shadow:1px 1px 10px red;
+}
+a:hover{
+border: 3px solid white;
+background-color: rgb(123, 238, 123);
+}
+#a{
+   margin: 50px 0px 10px 40px;
+
+}
+#b{
+    margin:50px 0px 10px 40px;
+}
+#c{
+    margin:50px 0px 10px 25px;
+}
+#d{
+    margin:40px 0px 50px 15px;
+}
+@media(max-width:450px){
+    div{
+        height:350px;
+        width:300px;
+    }
+    #a{
+        margin: 20px 0px 0px 25px;
+     
+     }
+     #b{
+         margin:42px 0px 0px 25px;
+     }
+     #c{
+         margin:40px 0px 0px 10px;
+     }
+     #d{
+         margin:40px 0px 50px 0px;
+     }
+
+}
