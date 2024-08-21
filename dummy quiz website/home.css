@@ -1,85 +1,107 @@
-body{
+body {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Ensure readability */
 }
-nav{
+
+nav {
     text-align: center;
     display: flex;
     justify-content: center;
-
+    padding: 10px;
 }
-h1{
+
+h1 {
     color: white;
-    font-size: 50px;
-    margin: 5px 20px 100px 10px;
+    font-size: 2.5rem; /* Responsive font size */
+    margin: 5px 20px;
 }
-img{
-    height:70px; 
-    width:70px;
+
+img {
+    height: 70px;
+    width: 70px;
 }
-div{
-    color:white;
-    height: 480px;
-    width: 400px;
+
+div {
+    color: white;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Prevents overflow */
     background-color: black;
-    border:2px solid rgb(248, 244, 244);
+    border: 2px solid rgb(248, 244, 244);
     text-align: center;
-    margin: auto;
+    margin: 20px auto;
     box-shadow: 5px 5px 15px white;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
+div label {
+    display: block; /* Full-width labels */
+    margin-bottom: 10px; /* Space between labels */
+    font-size: 1.2rem; /* Responsive font size */
 }
-div label{
 
-    font-size: 20px;
+label input {
+    font-size: 1rem; /* Responsive font size */
+    color: black;
+    width: 100%; /* Full-width inputs */
+    box-sizing: border-box;
+    padding: 8px; /* Add padding for better usability */
 }
-label input{
-    font-size: 15px;
-    color:black;
-}
-label input:hover{
-    border:2px solid rgb(11, 247, 3);
-}
-a{
-   text-decoration: none;
-   border: 3px solid red;
-   padding: 15px 20px;
-   font-size: 20px;
-   border-radius: 10px;
-   box-shadow:1px 1px 10px red;
-}
-a:hover{
-border: 3px solid white;
-background-color: rgb(123, 238, 123);
-}
-#a{
-   margin: 50px 0px 10px 40px;
 
+label input:hover {
+    border: 2px solid rgb(11, 247, 3);
 }
-#b{
-    margin:50px 0px 10px 40px;
+
+a {
+    text-decoration: none;
+    border: 3px solid red;
+    padding: 15px 20px;
+    font-size: 1.2rem; /* Responsive font size */
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px red;
+    display: inline-block;
+    margin-top: 20px;
 }
-#c{
-    margin:50px 0px 10px 25px;
+
+a:hover {
+    border: 3px solid white;
+    background-color: rgb(123, 238, 123);
 }
-#d{
-    margin:40px 0px 50px 15px;
-}
-@media(max-width:450px){
-    div{
-        height:350px;
-        width:300px;
+
+@media(max-width: 450px) {
+    div {
+        width: 95%; /* More flexible width on small screens */
+        max-width: none; /* Remove max-width restriction */
+        padding: 15px; /* Adjust padding for small screens */
     }
-    #a{
-        margin: 20px 0px 0px 25px;
-     
-     }
-     #b{
-         margin:42px 0px 0px 25px;
-     }
-     #c{
-         margin:40px 0px 0px 10px;
-     }
-     #d{
-         margin:40px 0px 50px 0px;
-     }
+    
+    h1 {
+        font-size: 2rem; /* Adjust font size */
+    }
 
+    label input {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+    
+    a {
+        font-size: 1rem; /* Smaller font size */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+@media(max-width: 320px) {
+    h1 {
+        font-size: 1.5rem; /* Further adjust font size for very small screens */
+    }
+
+    label input {
+        font-size: 0.8rem; /* Further adjust font size */
+    }
+
+    a {
+        font-size: 0.9rem; /* Further adjust font size */
+        padding: 8px 12px; /* Further adjust padding */
+    }
 }
